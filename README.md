@@ -1,4 +1,4 @@
-#Flexbox
+# Flexbox
 
 <p align="center">O que vamos aprender sobre flexbox? </p>
 <p align="center">
@@ -99,6 +99,59 @@ Flex Items: São os elementos filhos diretos de um contêiner flexível. Eles se
   Alinha um item individualmente ao longo do eixo cruzado, ignorando o valor de align-items do contêiner.
   Opções: auto, flex-start, flex-end, center, baseline, stretch.
   Exemplo: align-self: flex-end;
+
+## Veja um exemplo prático de flexbox:
+
+```
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flexbox</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: 200px;
+            background-color: #fff;
+            border: 2px solid #333;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #af4caa;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Caixa 1</div>
+        <div class="box">Caixa 2</div>
+        <div class="box">Caixa 3</div>
+    </div>
+</body>
+</html>
+```
+
 
 
 
